@@ -1,0 +1,9 @@
+[gd_scene load_steps=4 format=3 uid="uid://c62l2e40bda7w"]
+
+[ext_resource type="Script" uid="uid://chkxtfvdacat4" path="res://scripts/zombie_spawner.gd" id="1_vpl6p"]
+[ext_resource type="PackedScene" uid="uid://77hpd0jj3fpg" path="res://enemies/zombie_1.tscn" id="2_6obhr"]
+[ext_resource type="PackedScene" uid="uid://c002njatp3dw" path="res://enemies/zombie_2.tscn" id="3_cuk4h"]
+
+[node name="ZombieSpawner" type="Marker3D" groups=["spawner"]]
+script = ExtResource("1_vpl6p")
+zombie_scenes = Array[PackedScene]([ExtResource("2_6obhr"), ExtResource("3_cuk4h")])

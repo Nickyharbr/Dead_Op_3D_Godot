@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cao44vamxv72b"]
+
+[ext_resource type="Script" uid="uid://kbcsvxawyho" path="res://scripts/camera.gd" id="1_cvpoc"]
+
+[node name="Camera3D" type="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866026, 0, -0.866026, 0.5, 0, 9, 6)
+script = ExtResource("1_cvpoc")

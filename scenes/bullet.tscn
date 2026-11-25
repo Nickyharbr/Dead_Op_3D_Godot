@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf3vw3pplehby"]
+
+[ext_resource type="PackedScene" uid="uid://bdjxenfo1r0ku" path="res://models/bullet/bullet.glb" id="1_mkf8s"]
+[ext_resource type="Script" uid="uid://cbbqm66ymj86h" path="res://scripts/bullet.gd" id="1_y25gk"]
+
+[node name="Bullet" type="Area3D"]
+script = ExtResource("1_y25gk")
+
+[node name="Bullet" parent="." instance=ExtResource("1_mkf8s")]
+transform = Transform3D(-1.74846e-07, 0, 4, 0, 4, 0, -4, 0, -1.74846e-07, 0, 0, -0.125088)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+target_position = Vector3(0, 0, -1)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
