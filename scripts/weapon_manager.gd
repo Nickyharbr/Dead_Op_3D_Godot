@@ -20,7 +20,7 @@ var current_weapon: Node3D = null
 var weapons = {
 	"rifle": preload("res://scenes/weapons/rifle.tscn"),
 }
-
+#hello
 func equip_weapon(weapon_name: String) -> void:
 	if not weapons.has(weapon_name):
 		return

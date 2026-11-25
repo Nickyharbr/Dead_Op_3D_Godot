@@ -1761,7 +1761,7 @@ round_label = NodePath("CanvasLayer/RoundLabel")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.47098, 0, 0.0292201)
 
 [node name="ZombieSpawner2" parent="." instance=ExtResource("2_5xbjy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.45507, 1.15267, 6.18508)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.529347, -1.59408, -12.5337)
 initial_delay = 5.0
 
 [node name="ZombieSpawner3" parent="." instance=ExtResource("2_5xbjy")]
